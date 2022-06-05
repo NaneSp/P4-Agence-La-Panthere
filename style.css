@@ -90,8 +90,10 @@ a:hover {
     right: 0;
 }
 
+/*correction de l'url après formatage de l'image en webp*/
+/*correspond au fond bleu de la partie 2 sous header/nav*/
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
