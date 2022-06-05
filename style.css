@@ -7,17 +7,22 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+/*util sur un lien????*/
 a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
 }
 
+
+/*mettre le text decoration none dans le body?*/
 a:hover {
     text-decoration: none;
     cursor: pointer;
 }
 
+/*pourquoi page de loading ne s'affiche pas? où est ce gif?*/
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -27,7 +32,9 @@ a:hover {
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
+/*distribution de tous les blocs dans les deux pages permet d'avoir un fond blanc ds le header et + clair dans la section1*/
 .bloc {
+    border: red solid 10px;
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
@@ -39,24 +46,30 @@ a:hover {
     position: relative;
 }
 
-.bloc .container {
+/*bloc centré sur la page1 mais pas la page 2 */
+./*bloc .container {
+    border: green solid 10px;
     padding-left: 0;
     padding-right: 0;
-}
+}*/
+
+
 
 .bloc-lg {
     padding: 100px 50px;
 }
 
-.bloc-md {
+/*section 2*/
+/*.bloc-md {
     padding: 50px;
-}
+}*/
 
+/*1ere div sous footer*/
 .bloc-sm {
     padding: 20px 50px;
 }
 
-.bg-center,
+/*.bg-center,
 .bg-l-edge,
 .bg-r-edge,
 .bg-t-edge,
@@ -70,7 +83,7 @@ a:hover {
     -moz-background-size: auto!important;
     -o-background-size: auto!important;
     background-size: auto!important;
-}
+}*/
 
 .bg-repeat {
     background: repeat;
@@ -80,7 +93,8 @@ a:hover {
     background: top no-repeat;
 }
 
-.bloc-bg-texture::before {
+/*retrait de la texture pour meilleur contraste? à revoir??*/
+/*.bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
     position: absolute;
@@ -88,20 +102,25 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-}
+}*/
 
 /*correction de l'url après formatage de l'image en webp*/
-/*correspond au fond bleu de la partie 2 sous header/nav*/
-.texture-paper::before {
+/*correspond à la texture section 1 section 3 section 5 page 1 et section1 page 2 est elle nécessaire?????????*/
+/*.texture-paper::before {
+    border: blue solid 10px;
     background: url("img/texture-paper.webp");
     background-size: 280px 280px;
-}
+}*/
 
+/*entoure section2 et3*/
 .b-parallax {
+    
     background-attachment: fixed;
 }
 
+/*entour section1 3 5 et footer p1 + section 1 et footer p2*/
 .d-bloc {
+    border: rgb(255, 0, 230) solid 10px;
     color: rgba(255, 255, 255, .7);
 }
 
@@ -109,18 +128,21 @@ a:hover {
     color: rgba(255, 255, 255, .9);
 }
 
-.d-bloc .icon-round,
+/*qu'est-ce?*/
+/*.d-bloc .icon-round,
 .d-bloc .icon-square,
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
     border-color: rgba(255, 255, 255, .9);
-}
+}*/
 
 .d-bloc .divider-h span {
     border-color: rgba(255, 255, 255, .2);
 }
 
+/*contour bouton blanc transparent fb insta p1 et p2... + contour lien contact n°2*/
+/*revoir utilité du nomage puisque pas de h4 h5....*/
 .d-bloc .a-btn,
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
@@ -135,9 +157,12 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
+    border: rgb(7, 234, 177) solid 10px;
     color: rgba(255, 255, 255, .6);
 }
 
+/*survol contour bouton +blanc  fb insta p1 et p2... + contour lien contact n°2*/
+/*revoir utilité du nomage puisque pas de h4 h5....*/
 .d-bloc .a-btn:hover,
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
@@ -155,70 +180,78 @@ a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.d-bloc .navbar-toggle .icon-bar {
+/*.d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
-}
+}*/
 
-.d-bloc .btn-wire,
+
+/*qu'est-ce?*/
+/*.d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
     color: rgba(255, 255, 255, 1);
     border-color: rgba(255, 255, 255, 1);
-}
+}*/
 
-.d-bloc .panel {
-    color: rgba(0, 0, 0, .5);
-}
 
-.d-bloc .panel button:hover {
+/*qu'est ce?????*/
+/*.d-bloc .panel {
+    color: rgba(237, 16, 16, 0.5);
+}*/
+
+/*qu'est ce?????*/
+/*.d-bloc .panel button:hover {
     color: rgba(0, 0, 0, .7);
-}
+}*/
 
-.d-bloc .panel icon {
+/*qu'est ce?????*/
+/*.d-bloc .panel icon {
     border-color: rgba(0, 0, 0, .7);
-}
+}*/
 
-.d-bloc .panel .divider-h span {
+/*qu'est ce?????*/
+/*.d-bloc .panel .divider-h span {
     border-color: rgba(0, 0, 0, .1);
-}
+}*/
 
-.d-bloc .panel .a-btn {
+/*.d-bloc .panel .a-btn {
     color: rgba(0, 0, 0, .6);
-}
+}*/
 
-.d-bloc .panel .a-btn:hover {
+/*.d-bloc .panel .a-btn:hover {
     color: rgba(0, 0, 0, 1);
-}
+}*/
 
-.d-bloc .panel .btn-wire,
+/*.d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover {
     color: rgba(0, 0, 0, .7);
     border-color: rgba(0, 0, 0, .3);
-}
+}*/
 
-.d-bloc .panel,
+/*.d-bloc .panel,
 .l-bloc {
     color: rgba(0, 0, 0, .5);
-}
+}*/
 
-.d-bloc .panel button:hover,
+/*.d-bloc .panel button:hover,
 .l-bloc button:hover {
     color: rgba(0, 0, 0, .7);
-}
+}*/
 
-.l-bloc .icon-round,
+/*.l-bloc .icon-round,
 .l-bloc .icon-square,
 .l-bloc .icon-rounded,
 .l-bloc .icon-semi-rounded-a,
 .l-bloc .icon-semi-rounded-b {
     border-color: rgba(0, 0, 0, .7);
-}
+}*/
 
-.d-bloc .panel .divider-h span,
+/*.d-bloc .panel .divider-h span,
 .l-bloc .divider-h span {
     border-color: rgba(0, 0, 0, .1);
-}
+}*/
 
-.d-bloc .panel .a-btn,
+/*logo en tete + nav */
+/*.d-bloc .panel .a-btn,
 .l-bloc .a-btn,
 .l-bloc .navbar a,
 .l-bloc .navbar-brand,
@@ -234,9 +267,10 @@ a:hover {
 .l-bloc h6 a,
 .l-bloc p a {
     color: rgba(0, 0, 0, .6);
-}
+    border: rgb(158, 207, 33) solid 10px;
+}*/
 
-.d-bloc .panel .a-btn:hover,
+/*.d-bloc .panel .a-btn:hover,
 .l-bloc .a-btn:hover,
 .l-bloc .navbar a:hover,
 .l-bloc .navbar-brand:hover,
@@ -252,47 +286,59 @@ a:hover {
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
     color: rgba(0, 0, 0, 1);
-}
+}*/
 
-.l-bloc .navbar-toggle .icon-bar {
+/*.l-bloc .navbar-toggle .icon-bar {
     color: rgba(0, 0, 0, .6);
-}
+}*/
 
-.d-bloc .panel .btn-wire,
+/*.d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover,
 .l-bloc .btn-wire,
 .l-bloc .btn-wire:hover {
     color: rgba(0, 0, 0, .7);
     border-color: rgba(0, 0, 0, .3);
-}
+}*/
 
-.voffset {
+/*citation client*/
+/*.voffset {
+    border: rgb(199, 149, 11) solid 10px;
     margin-top: 30px;
-}
+}*/
 
+/*écrase citation client et englobe aussi les 3 icones + leurs h3 et leurs textes*/
 .voffset-lg {
+    border: rgb(75, 8, 209) solid 10px;
     margin-top: 80px;
 }
 
-.row-no-gutters {
+/*bloc encadrant les liens sociaux p1 et p2 */
+/*.row-no-gutters {
+    border: rgb(116, 9, 93) solid 10px;
     margin-right: 0;
     margin-left: 0;
-}
+}*/
 
-.row.row-no-gutters > [class^="col-"],
+/*bloc encadrant les liens sociaux 1 par 1 en p1 et p2 */
+/*.row.row-no-gutters > [class^="col-"],
 .row.row-no-gutters > [class*=" col-"] {
+    border: rgb(7, 1, 20) solid 10px;
     padding-right: 0;
     padding-left: 0;
-}
+}*/
 
+/*h1 visible uniquement sur p1 a mettre au debut du css dans les généralités*/
 #bloc-1-hero h1 {
+    border: rgb(7, 1, 20) solid 10px;
     font-size: 32px;
 }
 
-.navbar {
+/*ensemble header p1 puis page deux contient logo + toogle navigation (acceuil et ns contacter en dehors */
+/*.navbar {
+    border: rgb(120, 119, 122) solid 10px;
     margin-bottom: 0;
     z-index: 1;
-}
+}*/
 
 .navbar-brand {
     height: auto;
@@ -303,55 +349,67 @@ a:hover {
     line-height: 44px;
 }
 
-.navbar-brand img {
-    max-height: 200px;
+/*logo header p1 et p2*/
+/*.navbar-brand img {
+    border: rgb(81, 7, 227) solid 10px;
+    max-height: 300px;
     margin: 0 5px 0 0;
     display: inline;
 }
 
+/*taille logo header p1 et p2*/
 .navbar-brand img[src$=svg] {
+    background-color: orange;
     min-width: 100px;
-}
+}*/
 
 .nav-center .navbar-brand img {
     margin: 0;
 }
 
+
+/*entoure accueil et nous contacter p1 et p2  =ul à quoi sert il? */
 .navbar .nav {
+    border: yellow solid 10px;
     padding-top: 2px;
     margin-right: -16px;
     float: right;
     z-index: 1;
 }
 
+/*nav combinateur parent enfant/ si le 2nd est un enfant du premier alors il adoptera les spécifications ci apres*/
 .nav > li {
+    border: rgb(209, 161, 199) solid 10px;
     float: left;
     margin-top: 4px;
     font-size: 16px;
 }
-
-.navbar-nav .open .dropdown-menu > li > a {
+/*util?*/
+/*.navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
-}
+}*/
 
-.nav > li a:hover,
+
+/*util?*/
+/*.nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
-}
+}*/
 
-.navbar-toggle {
+/*util?*/
+/*.navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
-}
+}*/
 
-.navbar-toggle:hover {
+/*.navbar-toggle:hover {
     background: transparent!important;
-}
+}*/
 
-.navbar-toggle .icon-bar {
+/*.navbar-toggle .icon-bar {
     background-color: rgba(0, 0, 0, .5);
     width: 26px;
-}
+}*/
 
 .nav-invert .navbar .nav {
     float: left;
@@ -364,46 +422,8 @@ a:hover {
     z-index: 2;
 }
 
-@media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
-        color: #484848;
-    }
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
-    }
-    .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav > li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }
-}
+/*retrait du media query pour mise en fain de css*/
+
 
 .nav > li > .dropdown a {
     background: none!important;
@@ -437,16 +457,21 @@ nav .caret {
     float: right;
 }
 
+
+/*titre trois dessins*/
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
+/*contour du précédent apparaissent sur la p2 sans rien dedans*/
 .mg-lg {
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
+
+/*bouton envoyer p2*/
 .btn {
     margin: 0 5px 5px 0;
 }
@@ -518,7 +543,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1; /*modif de 0 à 1 pour voir où il se situe*/
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -532,6 +557,8 @@ button {
     opacity: 1;
 }
 
+
+/*apparition croix au survol des 4 photos*/
 a[data-lightbox] {
     position: relative;
     display: block;
@@ -701,16 +728,22 @@ p {
     font-weight: 700;
 }
 
+
+/*nouvel ensemble des liens fb insta...*/
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
 }
 
+
+/*texte couleur peche partie 4 souhait + tous les h2*/
 h2 {
     font-size: 22px;
     line-height: 1.4em;
 }
 
+
+/*titre sous dessins et sous les 3 photos*/
 h3 {
     font-size: 15px;
     text-transform: uppercase;
@@ -718,6 +751,7 @@ h3 {
     color: #333333!important;
 }
 
+/*contour ensemble des trois dessins*/
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
@@ -728,23 +762,29 @@ h1 {
     color: #333333!important;
 }
 
-h4 {
-    color: #333333!important;
-}
 
+/*pas de h4*/
+/*h4 {
+    color: #333333!important;
+}*/
+
+/*contour des 3dessins*/
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
 }
 
+/*texte blanc sous les souhaits + texte au dessus des liens sociaux fb inst*/
 .white {
     color: #FFFFFF!important;
 }
 
+/*photos book*/
 .portfolio-thumb {
     margin-bottom: 24px;
 }
 
+/*photo book mobile?*/
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
@@ -754,6 +794,7 @@ h4 {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
+/*encadrement des souhaits*/
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
     padding: 40px 40px 40px 40px;
@@ -764,22 +805,28 @@ h4 {
     text-decoration: underline!important;
 }
 
+/*bloc avec fond blanc*/
 .bgc-white {
     background-color: #FFFFFF;
 }
 
+/*blocs avec photo partie 2 et partie6*/
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
 
+/*couleur du footer + p2 des deux encadrés en couleurs*/
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
 
+/*encadré partie4 souhaits sur toute la page + centré  + partie6 contour du texte en peche  + apparait pour rien en p2 */
 .tc-white {
     color: #F3976C!important;
 }
 
+
+/*boutons contact peche*/
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
@@ -811,21 +858,28 @@ h4 {
     border-color: #364577!important;
 }
 
+
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
+/*contour du bloc des 4photos*/
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
 }
 
+/*img du bloc p2 */
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
+/*img bloc p4 souhaits*/
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
+
+
+/*revoir tous les MQ*/
 
 @media (max-width: 1024px) {
     .bloc {
@@ -840,6 +894,7 @@ h4 {
         padding-right: 0;
     }
 }
+
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
@@ -1040,5 +1095,46 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .site-navigation {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+        -webkit-transform: translateY(-50%);
+    }
+    .nav > li .dropdown-menu a,
+    .nav > li .dropdown-menu a:hover {
+        color: #484848;
+    }
+    .nav-invert .site-navigation {
+        left: 0;
+        right: 0;
+    }
+    .nav-center {
+        text-align: center;
+    }
+    .nav-center .navbar-header {
+        width: 100%;
+    }
+    .nav-center .navbar-header,
+    .nav-center .navbar-brand,
+    .nav-center .nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .nav-center .site-navigation {
+        position: relative;
+        width: 100%;
+        right: 0;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .nav-center.mini-nav .navbar-toggle {
+        float: none;
+        margin: 10px auto 0;
     }
 }
