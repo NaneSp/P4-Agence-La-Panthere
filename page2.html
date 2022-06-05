@@ -1,37 +1,47 @@
 <!doctype html>
-<html lang="Default">
+<!--modifier langue erreur w3c html-->
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+	<!--retrait balise meta keywords (explication sur index.html)
+    <meta name="keywords" content="">-->
+
+	<!--modifier le meta description/ bien utiliser mots clés +160 caractères-->
+    <meta name="description" content="La Panthère est une agence de Web Design située à Lyon, spécialisée dans la création et le raffraichissement de site web, agence de conseil et de service proposant son savoir faire en web design, stratégie et illustration">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
+
+<!--ajout d'une balise meta robots pour indexation correcte des pages du site 
+		Cela indique aux moteurs de recherche qu'ils doivent indexer la page (index) et suivre les liens présents sur celle-ci(follow)  (cf cours"augmentez votre trafic grâce au Référencement naturel (seo) Chapitre 3 leçon 3"réalisez un audit de votre site)-->
+		<meta name="robots" content="index,follow"/> 
+		
+<!--retrait du lien à quoi sert il? 	
+    <link rel="shortcut icon" type="image/png" href="favicon.jpg">si nous le conservons mettre l'img en webp et la classer dans le dossier img-->
     
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	
-    
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
-    <title>page2</title>
+    <!--Déplacement des script à la fin du code html pour optimiser les performances-->
+	
+    <title>La Panthère - Pour nous contacter -</title>
 
     
 <!-- Analytics -->
- 
+<!-- A quoi sert cette partie vide?--> 
 <!-- Analytics END -->
     
 </head>
 <body>
 <!-- Principal conteneur -->
-<div class="page-container">
+<!--mettre bonne sémantique html /header / main/ section/article/footer etc...-->
+<!--retrait balise div page container fait double emploi avec body
+<div class="page-container">-->
     
-<!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
+<!-- bloc-0 Header-->
+<!--remplacement div par balise sémantique adéquate header-->
+<header class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
@@ -45,23 +55,30 @@
 					<li>
 						<a href="index.html">Accueil</a>
 					</li>
+<!--retrait du li vide-->					
+					<!--<li>
+					</li>-->
+
+<!--correction de la coquille+ modification intitulé du lien -->	
 					<li>
-					</li>
-					<li>
-						<a href="page2.html">page2 &gt;</a>
+						<a href="page2.html">Nous Contacter<!--&gt;--></a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</div>
-</div>
+</header>
 <!-- bloc-0 END -->
 
+<!--ajouter un main puis des sections contenant des articles-->
+<main>
 <!-- bloc-6 -->
-<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+<!--remplacement div par section (section n°1)-->
+<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
+<!--où se trouve le texte du H1 et du P????-->				
 				<h1 class="text-center hero-bloc-text tc-white">
 					Parlons web design !
 				</h1>
@@ -72,15 +89,19 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-6 END -->
 
 <!-- bloc-7 -->
-<div class="bloc bgc-white l-bloc" id="bloc-7">
+<!--remplacement div par section   (section n°2)-->
+<section class="bloc bgc-white l-bloc" id="bloc-7">
+	<h2>Formulaire de contact:</h2>
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1"> 
+					
+<!--a quoi sert cela ???  novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">-->
 					<div class="form-group">
 						<label>
 							Nom
@@ -104,11 +125,14 @@
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
+
+<!--bouton envoyer-->					
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
 				</form>
 			</div>
+<!--infos-->			
 			<div class="col-sm-6">
 				<p>
 					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
@@ -116,53 +140,68 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-7 END -->
 
 <!-- ScrollToTop Button -->
+<!--Où est ce bouton????????????-->
 <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 <!-- ScrollToTop Button END-->
-
+</main>
 
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<!-- utilisation balise footer-->
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
 				<p class="text-center white">
 					Agence La Panthère - Agence web basée à Lyon.<br>
 				</p>
+<!--où sont les icônes réseaux sociaux???????????-->				
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+<!--création lien vers twitter à la place d'index.html-->							
+							<a class="social" href="https://www.twitter.com"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+<!--création lien vers facebook à la place d'index.html-->								
+							<a class="social" href="https://www.facebook.com/"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+<!--création lien vers dribble à la place d'index.html-->							
+							<a class="social" href="https://dribbble.com/"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+<!--création lien vers instagram à la place d'index.html-->								
+							<a class="social" href="https://www.instagram.com/?hl=fr"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
-</div>
+<!--</div>-->
 <!-- Principal conteneur END -->
-    
+
+<!--ajouter les script JS en defer qui permettra au navigateur de charger les scripts en parallèle sans stopper le rendu de la page html ou en async et permet d'exécuté les scripts dès que possible si pas de blocage ?-->
+<!--voir utilité de ces scripts	-->
+<script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/formHandler.js"></script>    
 
 </body>
 </html>
