@@ -2,14 +2,15 @@
 
 <!doctype html>
 <!--modifier langue erreur w3c html-->
-<html lang="fr">
+<html lang= "fr" >
 <head>
     <meta charset="utf-8">
 	<!--retrait balise meta keywords qui n'est plus considéré par google dans son algorythme de classement car trop faciles à abuser (stopé par google en 2009) + erreur ville
     <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design">-->
 	
 	<!--modifier le meta description/ bien utiliser mots clés +160 caractères-->
-	<meta name="description" content="La Panthère est une agence de Web Design située 2, place Sathonay 69001 Lyon, spécialisée dans la création ou le raffraichissement de site web, agence de conseil et de service proposant son savoir faire en web design, stratégie et illustration">
+	<meta name="description" content="La Panthère est une agence de Web Design située à Lyon, spécialisée dans la création et le raffraichissement de site web, agence de conseil et de service proposant son savoir faire en web design, stratégie et illustration">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 	<!--ajout d'une balise meta robots pour indexation correcte des pages du site 
@@ -17,7 +18,7 @@
 	<meta name="robots" content="index,follow"/> 
 
 
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
+    <!--retrait du lien à quoi sert il? <link rel="shortcut icon" type="image/png" href="favicon.jpg"> si nous le conservons mettre l'img en webp et la classer dans le dossier img-->
     
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -57,7 +58,7 @@
 
 <!--voir poids des images svg, jpg, png en en WebP ou Avif + modifier description du alt pour accéssibilité-->
 <!--modification du format des images en WebP (avif plus optimum mais n'est pas encore compatible avec tous les navigateurs)-->				
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="paris web design logo agence web meilleure agence" height="40" /></a>
+				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="tête de panthère en noir et blanc et nom de l'agence la panthère" height="40" /></a>
 
 <!--oter balise meta keywords qui n'est plus considéré par google dans son algorythme de classement car trop faciles à abuser (stopé par google en 2009) + erreur ville	
 				<div class="keywords" style="color:#cccccc;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>-->	
@@ -77,8 +78,8 @@
 					<!--<li>
 					</li>-->
 					<li>
-<!--corriger coquille-->						
-						<a href="page2.html">page2 &gt;</a>
+<!--correction de la coquille -->						
+						<a href="page2.html">page2 <!--&gt;--></a>
 					</li>
 				</ul>
 			</div>
@@ -99,13 +100,11 @@
 			<div class="col-sm-12">
 
 <!--voir poids des images svg, jpg, png en en WebP ou Avif-->	
-<!--revoir localisation Paris/Lyon dans les alt des descriptions accessibilité-->				
-				<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="Agence La Panthère, agence web paris, création logo paris" />
+<!--révision du logo en webp + localisation Paris/Lyon dans les alt des descriptions accessibilité-->				
+				<img src="img/logo.webp" class="center-block image-resize-mode" width="100" alt="tête de panthère en noir et blanc" />
 
 <!--suivre importance h1/h2/h3-->
-				<h1 class="text-center hero-bloc-text tc-white ">
-					Agence La Panthère
-				</h1>
+				<h1 class="text-center hero-bloc-text tc-white ">Agence La Panthère</h1>
 				<div class="text-center">
 
 <!--voir si un seul button qui suit la navigation ne serait pas plus efficace-->					
@@ -125,9 +124,8 @@
 		<div class="row">
 			<div class="col-sm-12 text-center">
 
-<!--écrire texte ou mettre un h2 plutôt que de mettre une image avec du texte sera - lourd-->
-
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title.png" />
+<!--écriture du texte en h2 pour segmenter le html correctement et pour référencement +simple plutôt que de mettre une image avec du texte  qui sera + lourde  ou formatage de l'image en webp avec description correcte dans le alt <img alt="L'agence La Panthère est une agence de web design qui aide les entreprises à devenir attractives et visibles sur internet" src="gitignore/supprimer title.webp" />-->
+				<h2>L'agence La Panthère est une agence de web design qui aide les entreprises à devenir attractives et visibles sur internet.</h2>
 			</div>
 		</div>
 		<div class="row voffset-lg med-width-whitespace">
@@ -139,23 +137,23 @@
 					Web design
 				</h3>
 
-<!--corriger coquille du html dans paragraphe-->				
+<!--correction coquille du html dans paragraphe-->				
 				<p class="text-center ">
-					Que vous ayez un site web qui a besoin d&rsquo;un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.
+					Que vous ayez un site web qui a besoin d'<!--&rsquo;-->un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.
 				</p>
 			</div>
 			<div class="col-sm-4">
 				<div class="text-center">
 					<span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
-<!--corriger coquille du html h3-->					
+<!--correction coquille du html h3-->					
 				<h3 class="mg-md text-center">
-					&nbsp;Stratégie
+					<!--&nbsp;-->Stratégie
 				</h3>
 
-<!--oter br qui ne sert à rien-->				
+<!--retrait du br qui ne sert à rien-->				
 				<p class="text-center ">
-					Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.<br>
+					Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.<!--<br>-->
 				</p>
 			</div>
 			<div class="col-sm-4">
@@ -173,8 +171,9 @@
 		<div class="row voffset-lg voffset">
 			<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
 
-<!--écrire la citation en blockquote + cite ou figcaption plutôt que conserver l'image qui sera + lourde-->
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/citation.png" />
+<!--écriture de la citation en blockquote + cite ou figcaption plutôt que conserver l'image qui sera + lourde ou formatage de l'image en webp avec description correcte dans le alt   
+	<img alt="citation : L'agence La Panthère est une excellente agence web! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. cela nous a aidé à doubler nos ventes en ligne à Lyon - propos de Maxime Guibard, PDG de À vos fourchettes" src="gitignore/supprimer citation.webp" />-->
+	<h2><blockquote>L'agence La Panthère est une excellente agence web! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. cela nous a aidé à doubler nos ventes en ligne à Lyon. </blockquote><figcaption>Maxime Guibard, PDG de À vos fourchettes</figcaption></h2>
 
 			</div>
 		</div>
@@ -190,9 +189,9 @@
 		<div class="row tight-width-whitespace black-background">
 			<div class="col-sm-12">
 
-<!--revoir couleur + taille police pour contraste optimisé + oter br?-->				
+<!--revoir couleur + taille police pour contraste optimisé + retrait br-->				
 				<h2 class="mg-md text-center tc-white">
-					Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .<br>
+					Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .<!--<br>-->
 				</h2>
 
 <!--revoir taille de police-->
@@ -216,17 +215,18 @@
 		<div class="row">
 			<div class="col-sm-12 text-center">
 
-<!--écrire texte ou mettre un h2 plutôt que de mettre une image avec du texte sera - lourd-->
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title2.png" />
+<!--écriture du texte en h2 pour segmenter le html correctement et pour référencement +simple plutôt que de mettre une image avec du texte  qui sera + lourde  ou formatage de l'image en webp avec description correcte dans le alt   <img alt="Nous travaillons avec beaucoup de clients, voici nos réalisations." src="gitignore/supprimer title2.webp" />-->
+				<h2>Nous travaillons avec beaucoup de clients, voici nos réalisations.</h2>
 			</div>
 		</div>
 
-<!--mettre un article-->		
-		<div class="row tight-width-whitespace portfolio-row">
+<!--modification semantique pour mise en place  article à la place de div-->		
+		<article class="row tight-width-whitespace portfolio-row">
 			<div class="col-sm-6">
 
-<!--voir poids des images svg, jpg, png en en WebP ou Avif + revoir localisation paris/Lyon+revoir description du alt-->				
-				<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.jpg" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" /></a>
+<!--voir poids des images svg, jpg, png en en WebP ou Avif + revoir localisation paris/Lyon+revoir description du alt-->
+<!--formatage img en webp + correction du alt-->				
+				<a href="#" data-lightbox="img/1.WebP" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.webp" alt="plusieurs livres de couleurs multiples ouverts et posés les uns sur les autres" class="img-responsive portfolio-thumb" /></a>
 				<h3 class="mg-md text-center">
 					Refonte d'un site web pour un journal local
 				</h3>
@@ -235,26 +235,28 @@
 				</p>
 			</div>
 
-<!--mettre un article-->			
-			<div class="col-sm-6">
+<!--modification semantique pour mise en place  article à la place de div-->			
+			<article class="col-sm-6">
 
-<!--voir poids des images svg, jpg, png en en WebP ou Avif + revoir localisation paris/Lyon+revoir description du alt-->				
-				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.jpg" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" /></a>
+<!--voir poids des images svg, jpg, png en en WebP ou Avif + revoir localisation paris/Lyon+revoir description du alt-->
+<!--formatage img en webp + correction du alt-->				
+				<a href="#" data-lightbox="img/2.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.webp" class="img-responsive portfolio-thumb" alt="jeune fille à lunettes, aux cheveux longs châtains capuche sur la tête prenant une photo avec appareil photo professionnel posé sur pied" /></a>
 				<h3 class="mg-md text-center">
 					Création d'un site web pour photographes
 				</h3>
 				<p class="text-center">
 					Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.
 				</p>
-			</div>
-		</div>
+			</article>
+		</article>
 
-<!--mettre un article-->		
-		<div class="row tight-width-whitespace portfolio-row">
+<!--modification semantique pour mise en place  article à la place de div-->		
+		<article class="row tight-width-whitespace portfolio-row">
 			<div class="col-sm-6">
 
-<!--voir poids des images svg, jpg, png en en WebP ou Avif + revoir localisation paris/Lyon+revoir description du alt-->				
-				<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/></a>
+<!--voir poids des images svg, jpg, png en en WebP ou Avif + revoir localisation paris/Lyon+revoir description du alt-->
+<!--formatage img en webp + correction du alt-->				
+				<a href="#" data-lightbox="img/3.Webp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.webp" class="img-responsive portfolio-thumb" alt="table noire sur laquelle sont posés des outils nécessaires à la création web (laptop, appareil photo, camera avec outils de prise de son, mesure de lumieres... outils divers... le tout pris de haut"/></a>
 				<h3 class="mg-md text-center">
 					Création d'un site internet pour un voyageur
 				</h3>
@@ -263,19 +265,19 @@
 				</p>
 			</div>
 
-<!--mettre un article-->			
-			<div class="col-sm-6">
+<!--modification semantique pour mise en place  article à la place de div-->			
+			<article class="col-sm-6">
 
 <!--voir poids des images svg, jpg, png en en WebP ou Avif + revoir localisation paris/Lyon+revoir description du alt-->				
-				<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" /></a>
+				<a href="#" data-lightbox="img/4.webp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.webp" class="img-responsive portfolio-thumb" alt="table blanche vue du dessus surlaquelle travaille deux personnes dont on ne voit que les mains, l'un utilise un laptop, l'autre tient une feuille, la table est parsemée de feuilles, de ciseaux, de ruban adhésifs..." /></a>
 				<h3 class="mg-md text-center">
 					Conception d'un site pour une agence de mariage
 				</h3>
 				<p class="text-center">
 					Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.
 				</p>
-			</div>
-		</div>
+			</article>
+		</article>
 	</div>
 </div>
 <!-- bloc-4-portfolio END -->
@@ -292,8 +294,6 @@
 				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 			</h2>
 			<div class="col-sm-12 text-center">
-
-<!--écrire texte ou mettre un h2 plutôt que de mettre une image avec du texte sera - lourd-->				
 				<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
 			</div>
 		</div>
@@ -301,19 +301,19 @@
 </div>
 
 </main>
-<!-- bloc-5-cta END -->
+<!--</div> div class=page-container-->
 
-<!-- Footer - bloc-8 -->
+<!-- Footer - bloc-6 -->
 
 <!-- utiliser balise footer-->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
 
-<!--mettre adresse entière 2, place sathonay 69001 Lyon + plan google??-->	
+<!--mise en place adresse entière : 2, place sathonay 69001 Lyon + plan google?? + retrait dernier br-->	
 				<p class="text-center white">
-					Agence La Panthère - Agence web basée à Lyon.<br>
+					Agence La Panthère <br> Agence web basée au 2, place Sathonay 69001 Lyon.
 				</p>
 
 <!--liens vers es réseaux sociaux-->				
@@ -321,34 +321,34 @@
 					<div class="col-sm-3">
 						<div class="text-center">
 
-<!--créer lien vers twitter à la place d'index.html-->							
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+<!--création lien vers twitter à la place d'index.html-->							
+							<a class="social" href="https://www.twitter.com"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
 
-<!--créer lien vers facebook à la place d'index.html-->	
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+<!--création lien vers facebook à la place d'index.html-->	
+							<a class="social" href="https://www.facebook.com/"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
 
-<!--créer lien vers dribble à la place d'index.html-->								
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+<!--création lien vers dribble à la place d'index.html-->								
+							<a class="social" href="https://dribbble.com/"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
 
-<!--créer lien vers instagram à la place d'index.html-->								
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+<!--création lien vers instagram à la place d'index.html-->								
+							<a class="social" href="https://www.instagram.com/?hl=fr"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 
-<!--oter balise meta keywords qui n'est plus considéré par google dans son algorythme de classement car trop faciles à abuser (stopé par google en 2009) + erreur vile-->
-					<div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
+<!--retrait balise meta keywords qui n'est plus considéré par google dans son algorythme de classement car trop faciles à abuser (stopé par google en 2009) + erreur ville
+					<div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>-->
 				</div>
 				<div class="row">
 					<div class="col-sm-4">
@@ -388,13 +388,13 @@
 							<li><a href="linkjuiceannuaire.com">linkjuiceannuaire.com</a></li>
 							<li><a href="remontersurgoogle.com">remontersurgoogle.com</a></li>
 							<li><a href="vraiseofiable.com">vraiseofiable.com</a></li>
-						</ul>
+						</ul>-->
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>-->
+</footer>
 <!-- Footer - bloc-8 END -->
 
 </div>
