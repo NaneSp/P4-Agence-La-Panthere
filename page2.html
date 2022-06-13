@@ -1,18 +1,10 @@
 <!doctype html>
-<!--modifier langue erreur w3c html-->
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-	<!--retrait balise meta keywords (explication sur index.html)
-    <meta name="keywords" content="">-->
-
-	<!--modifier le meta description/ bien utiliser mots clés +160 caractères-->
     <meta name="description" content="La Panthère est une agence de Web Design située à Lyon, spécialisée dans la création et le raffraichissement de site web, agence de conseil et de service proposant son savoir faire en web design, stratégie et illustration">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-<!--ajout d'une balise meta robots pour indexation correcte des pages du site 
-		Cela indique aux moteurs de recherche qu'ils doivent indexer la page (index) et suivre les liens présents sur celle-ci(follow)  (cf cours"augmentez votre trafic grâce au Référencement naturel (seo) Chapitre 3 leçon 3"réalisez un audit de votre site)-->
 		<meta name="robots" content="index,follow"/> 
 		
 <!--retrait du lien à quoi sert il? 	
@@ -22,8 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-	
-    <!--Déplacement des script à la fin du code html pour optimiser les performances-->
 	
     <title>La Panthère - Pour nous contacter -</title>
 
@@ -35,10 +25,6 @@
 </head>
 <body>
 <!-- Principal conteneur -->
-<!--mettre bonne sémantique html /header / main/ section/article/footer etc...-->
-<!--retrait balise div page container fait double emploi avec body
-<div class="page-container">-->
-    
 <!-- bloc-0 Header-->
 <!--remplacement div par balise sémantique adéquate header-->
 <header class="bloc bgc-white l-bloc " id="bloc-0">
@@ -55,14 +41,9 @@
 				<ul class="site-navigation nav navbar-nav">
 					<li>
 						<a href="index.html">Accueil</a>
-					</li>
-<!--retrait du li vide-->					
-					<!--<li>
-					</li>-->
-
-<!--correction de la coquille+ modification intitulé du lien -->	
+					</li>	
 					<li>
-						<a href="page2.html">Nous Contacter<!--&gt;--></a>
+						<a href="page2.html">Nous Contacter</a>
 					</li>
 				</ul>
 			</div>
@@ -70,8 +51,6 @@
 	</div>
 </header>
 <!-- bloc-0 END -->
-
-<!--ajouter un main puis des sections contenant des articles-->
 <main>
 <!-- bloc-6 -->
 <!--remplacement div par section (section n°1)-->
@@ -151,7 +130,6 @@
 </main>
 
 <!-- Footer - bloc-8 -->
-<!-- utilisation balise footer-->
 <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
@@ -162,27 +140,23 @@
 <!--où sont les icônes réseaux sociaux???????????-->				
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
-						<div class="text-center">
-<!--création lien vers twitter à la place d'index.html-->							
-							<a class="social" href="https://www.twitter.com"><span class="fa fa-twitter icon-md"></span></a>
+						<div class="text-center">					
+							<a class="social" href="https://www.twitter.com" title="Twitter"><span class="fa fa-twitter icon-md" ></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-<!--création lien vers facebook à la place d'index.html-->								
-							<a class="social" href="https://www.facebook.com/"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="https://www.facebook.com/" title="Facebook"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-<!--création lien vers dribble à la place d'index.html-->							
-							<a class="social" href="https://dribbble.com/"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="https://dribbble.com/" title="dribbble"><span class="fa fa-dribbble icon-md" ></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-<!--création lien vers instagram à la place d'index.html-->								
-							<a class="social" href="https://www.instagram.com/?hl=fr"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="https://www.instagram.com/?hl=fr" title="Instagram"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
@@ -191,8 +165,6 @@
 	</div>
 </footer>
 <!-- Footer - bloc-8 END -->
-
-<!--</div>-->
 <!-- Principal conteneur END -->
 
 <!--ajouter les script JS en defer qui permettra au navigateur de charger les scripts en parallèle sans stopper le rendu de la page html ou en async et permet d'exécuté les scripts dès que possible si pas de blocage ?-->

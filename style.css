@@ -92,7 +92,7 @@ a:hover {
 .bg-t-edge {
     background: top no-repeat;
 }
-
+/*faire test pour voir si gain pour le site ----------------------------------*/
 /*retrait de la texture pour meilleur contraste? à revoir??*/
 /*.bloc-bg-texture::before {
     content: "";
@@ -140,6 +140,7 @@ a:hover {
 .d-bloc .divider-h span {
     border-color: rgba(255, 255, 255, .2);
 }
+
 
 /*contour bouton blanc transparent fb insta p1 et p2... + contour lien contact n°2*/
 /*revoir utilité du nomage puisque pas de h4 h5....*/
