@@ -1427,7 +1427,7 @@ figure {
 }
 
 img {
-    vertical-align: middle
+    -align: middle;
 }
 
 .carousel-inner>.item>a>img,
@@ -1991,17 +1991,18 @@ pre code {
     }
 }
 
-@media (min-width:992px) {
+/*@media (min-width:992px) {
     .container {
-        width: 970px
+        width: 100%;
+        
     }
-}
+}*/
 
 @media (min-width:1200px) {
     .container {
-        width: 1170px
+        width: 100%;
     }
-}
+}*/
 
 .container-fluid {
     padding-right: 15px;
@@ -2012,7 +2013,8 @@ pre code {
 
 .row {
     margin-right: -15px;
-    margin-left: -15px
+    margin-left: -15px;
+    
 }
 
 .col-lg-1,
@@ -7795,7 +7797,8 @@ button.close {
 .center-block {
     display: block;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    padding-top: 25px;
 }
 
 .pull-right {

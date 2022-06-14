@@ -1,5 +1,6 @@
 body {
-    border: #000000 solid 15px;
+    min-width: none;
+    max-width: none;
     margin: 0;
     padding: 0;
     background: #FFF;
@@ -10,6 +11,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+
 }
 
 
@@ -27,9 +30,6 @@ a:hover {
     cursor: pointer;
 }
 
-.map{
-    border: black solid 10px;
-}
 
 /*pourquoi page de loading ne s'affiche pas? où est ce gif?*/
 #page-loading-blocs-notifaction {
@@ -41,18 +41,19 @@ a:hover {
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
-#bloc-0{
-    border: green solid 10px;
-    display: flex;
-    justify-content:space-between;
+main{
+    width: 100%;
 }
+
+
 /*distribution de tous les blocs dans les deux pages permet d'avoir un fond blanc ds le header et + clair dans la section1*/
 .bloc {
-    border: red solid 10px;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    
     clear: both;
+    width: 100%;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -79,15 +80,10 @@ a:hover {
 
 /*1ere div sous footer*/
 /*.bloc-sm {
-    border: green solid 10px;
     padding: 20px 50px;
 
 }*/
 
-
-.map{
-    padding: 20px;
-}
 
 /*.bg-center,
 .bg-l-edge,
@@ -126,8 +122,7 @@ a:hover {
 
 /*correction de l'url après formatage de l'image en webp*/
 /*correspond à la texture section 1 section 3 section 5 page 1 et section1 page 2 est elle nécessaire?????????*/
-/*.texture-paper::before {
-    border: blue solid 10px;
+/*.texture-paper::before 
     background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }*/
@@ -140,9 +135,9 @@ a:hover {
 
 /*entour section1 3 5 et footer p1 + section 1 et footer p2*/
 .d-bloc {
-    border: rgb(255, 0, 230) solid 10px;
+   
     color: rgba(255, 255, 255, .7);
-    
+    width: 100%;
 }
 
 .d-bloc button:hover {
@@ -179,8 +174,8 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    border: rgb(7, 234, 177) solid 10px;
     color: rgba(255, 255, 255, .6);
+    padding: 30px 0 30px 0;
 }
 
 /*survol contour bouton +blanc  fb insta p1 et p2... + contour lien contact n°2*/
@@ -330,7 +325,7 @@ a:hover {
 
 /*écrase citation client et englobe aussi les 3 icones + leurs h3 et leurs textes*/
 .voffset-lg {
-    border: rgb(75, 8, 209) solid 10px;
+    
     margin-top: 80px;
 }
 
@@ -351,40 +346,29 @@ a:hover {
 
 /*h1 visible uniquement sur p1 a mettre au debut du css dans les généralités*/
 #bloc-1-hero h1 {
-    border: rgb(7, 1, 20) solid 10px;
-    font-size: 32px;
+    font-size: 50px;
     font-weight: bolder;
 }
 
 /*ensemble header p1 puis page deux contient logo + toogle navigation (acceuil et ns contacter en dehors */
-/*.navbar {
-    border: rgb(120, 119, 122) solid 10px;
+.navbar {
+    
     margin-bottom: 0;
+    padding: 15px;
     z-index: 1;
-}*/
+}
 
 .navbar-brand {
     height: auto;
-    padding: 3px 15px;
-    font-size: 25px;
-    font-weight: normal;
-    font-weight: 600;
-    line-height: 44px;
+    width: 100%;
+
 }
 
 /*logo header p1 et p2*/
-/*.navbar-brand img {
-    border: rgb(81, 7, 227) solid 10px;
-    max-height: 300px;
-    margin: 0 5px 0 0;
-    display: inline;
-}
+
 
 /*taille logo header p1 et p2*/
-.navbar-brand img[src$=svg] {
-    background-color: orange;
-    min-width: 100px;
-}
+
 
 .nav-center .navbar-brand img {
     margin: 0;
@@ -393,7 +377,6 @@ a:hover {
 
 /*entoure accueil et nous contacter p1 et p2  =ul à quoi sert il? */
 .navbar .nav {
-    border: yellow solid 10px;
     padding-top: 2px;
     margin-right: -16px;
     
@@ -554,10 +537,7 @@ button {
     border-radius: 0 0 29px 29px;
 }
 
-.form-control {
-    border-color: rgba(0, 0, 0, .1);
-    box-shadow: none;
-}
+
 
 .scrollToTop {
     width: 40px;
@@ -705,9 +685,9 @@ a {
     color: #575757!important;
 }
 
-.container {
+/*.container {
     max-width: 1000px;
-}
+}*/
 
 .hero-bloc-text {
     font-size: 38px;
@@ -728,7 +708,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .tight-width-whitespace {
@@ -743,10 +723,11 @@ p {
 
 .cta-hero {
     margin-top: 22px;
+    margin-bottom: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    padding: 22px 38px 22px 38px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -762,14 +743,15 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    margin-bottom: 40px;
+    
 }
 
 
 /*titre sous dessins et sous les 3 photos*/
 h3 {
     font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
+    line-height: 1.4em;
     color: #333333!important;
 }
 
@@ -799,6 +781,9 @@ h1 {
 /*texte blanc sous les souhaits + texte au dessus des liens sociaux fb inst*/
 .white {
     color: #FFFFFF!important;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 30px;
 }
 
 /*photos book*/
@@ -810,6 +795,7 @@ h1 {
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
+    
 }
 
 .avatar {
@@ -818,7 +804,7 @@ h1 {
 
 /*encadrement des souhaits*/
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(43, 43, 43, 0.724);
     padding: 40px 40px 40px 40px;
 }
 
@@ -845,18 +831,80 @@ h1 {
 /*encadré partie4 souhaits sur toute la page + centré  + partie6 contour du texte en peche  + apparait pour rien en p2 */
 .tc-white {
     color: #FFFFFF!important;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 40px;
+    text-align: center;
+    
+    
+
+}
+.tc-white-1 {
+    color: #FFFFFF!important;
+    font-weight: bolder;
+    font-size: 55px;
+    margin-top: 40px;
+    text-align: center;
+    
+
+}
+.tc-white-2 {
+    color: #FFFFFF!important;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-top: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+    
+
 }
 
+#form_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+}
+
+.form-group{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+/*input formulaire*/
+.form-control {
+    width: 100%;
+    height: 30px;
+    border-color: rgba(0, 0, 0, 0.134);
+    border-radius: 5px;
+    
+}
+
+#message{
+    height: 150px;
+}
+.contactAgence{
+    text-align: center;
+    font-size: large;
+    color: #FFFFFF !important;
+    margin-bottom: 10px;
+}
 
 /*boutons contact peche*/
 .btn-atomic-tangerine {
     background: #97380C;
     color: #FFFFFF!important;
+    border: none;
+    border-radius: 55px;
+   
 }
 
 .btn-atomic-tangerine:hover {
     background: #97380C!important;
     color: #FFFFFF!important;
+    box-shadow: 10px 10px 15px #00000075;
 }
 
 .ltc-white {
@@ -883,21 +931,27 @@ h1 {
 
 .bg-dots-bg {
     background-image: url("img/dots-bg.webp");
+    width: 100%;
 }
 
 /*contour du bloc des 4photos*/
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
+    width: 100%;
 }
 
 /*img du bloc p2 */
 .bg-banniere {
     background-image: url("img/agence-la-panthere.webp");
+    width: 100%;
+    height: 250px;
 }
 
 /*img bloc p4 souhaits*/
 .bg-presentation {
     background-image: url("img/image-de-presentation.webp");
+    width: 100%;
+    
 }
 
 
