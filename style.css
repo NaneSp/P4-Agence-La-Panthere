@@ -1,6 +1,4 @@
 body {
-    min-width: none;
-    max-width: none;
     margin: 0;
     padding: 0;
     background: #FFF;
@@ -24,7 +22,7 @@ button {
 }
 
 
-/*mettre le text decoration none dans le body?*/
+
 a:hover {
     text-decoration: none;
     cursor: pointer;
@@ -50,7 +48,6 @@ main{
 .bloc {
     margin: 0;
     padding: 0;
-    
     clear: both;
     width: 100%;
     background: 50% 50% no-repeat;
@@ -62,30 +59,32 @@ main{
 }
 
 /*bloc centré sur la page1 mais pas la page 2 */
-./*bloc .container {
+/*.bloc .container {
+    border: green solid 4px;
     padding-left: 0;
     padding-right: 0;
+    width: 100%;
 }*/
 
 
-
-.bloc-lg {
+/*section 1*/
+/*.bloc-lg {
     padding: 100px 50px;
-}
+}*/
 
 /*section 2*/
-/*.bloc-md {
+.bloc-md {
     padding: 50px;
-}*/
+}
 
 /*1ere div sous footer*/
-/*.bloc-sm {
+.bloc-sm {
     padding: 20px 50px;
 
-}*/
+}
 
 
-/*.bg-center,
+.bg-center,
 .bg-l-edge,
 .bg-r-edge,
 .bg-t-edge,
@@ -99,7 +98,7 @@ main{
     -moz-background-size: auto!important;
     -o-background-size: auto!important;
     background-size: auto!important;
-}*/
+}
 
 .bg-repeat {
     background: repeat;
@@ -108,7 +107,7 @@ main{
 .bg-t-edge {
     background: top no-repeat;
 }
-/*faire test pour voir si gain pour le site ----------------------------------*/
+
 /*retrait de la texture pour meilleur contraste? à revoir??*/
 /*.bloc-bg-texture::before {
     content: "";
@@ -120,7 +119,7 @@ main{
     right: 0;
 }*/
 
-/*correction de l'url après formatage de l'image en webp*/
+/*Retrait texture pour meilleur contraste*/
 /*correspond à la texture section 1 section 3 section 5 page 1 et section1 page 2 est elle nécessaire?????????*/
 /*.texture-paper::before 
     background: url("img/texture-paper.webp");
@@ -129,13 +128,12 @@ main{
 
 /*entoure section2 et3*/
 .b-parallax {
-    
     background-attachment: fixed;
 }
 
 /*entour section1 3 5 et footer p1 + section 1 et footer p2*/
 .d-bloc {
-   
+
     color: rgba(255, 255, 255, .7);
     width: 100%;
 }
@@ -145,19 +143,19 @@ main{
 }
 
 /*qu'est-ce?*/
-/*.d-bloc .icon-round,
+.d-bloc .icon-round,
 .d-bloc .icon-square,
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
     border-color: rgba(255, 255, 255, .9);
-}*/
+}
 
 .d-bloc .divider-h span {
     border-color: rgba(255, 255, 255, .2);
 }
 
-
+/*inversion des couleurs fixe et au survol pour plus de cohérence visuelle + retrait du padding*/
 /*contour bouton blanc transparent fb insta p1 et p2... + contour lien contact n°2*/
 /*revoir utilité du nomage puisque pas de h4 h5....*/
 .d-bloc .a-btn,
@@ -174,8 +172,8 @@ main{
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
-    padding: 30px 0 30px 0;
+    color: rgba(255, 255, 255, 1); 
+    
 }
 
 /*survol contour bouton +blanc  fb insta p1 et p2... + contour lien contact n°2*/
@@ -194,81 +192,80 @@ main{
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, .6);
 }
 
-/*.d-bloc .navbar-toggle .icon-bar {
+.d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
-}*/
+}
 
 
-/*qu'est-ce?*/
-/*.d-bloc .btn-wire,
+
+.d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
     color: rgba(255, 255, 255, 1);
     border-color: rgba(255, 255, 255, 1);
-}*/
+}
 
 
-/*qu'est ce?????*/
-/*.d-bloc .panel {
+.d-bloc .panel {
     color: rgba(237, 16, 16, 0.5);
-}*/
+}
 
-/*qu'est ce?????*/
-/*.d-bloc .panel button:hover {
+
+.d-bloc .panel button:hover {
     color: rgba(0, 0, 0, .7);
-}*/
+}
 
-/*qu'est ce?????*/
-/*.d-bloc .panel icon {
+
+.d-bloc .panel icon {
     border-color: rgba(0, 0, 0, .7);
-}*/
+}
 
-/*qu'est ce?????*/
-/*.d-bloc .panel .divider-h span {
+
+.d-bloc .panel .divider-h span {
     border-color: rgba(0, 0, 0, .1);
-}*/
+}
 
-/*.d-bloc .panel .a-btn {
+.d-bloc .panel .a-btn {
     color: rgba(0, 0, 0, .6);
-}*/
+}
 
-/*.d-bloc .panel .a-btn:hover {
+.d-bloc .panel .a-btn:hover {
     color: rgba(0, 0, 0, 1);
-}*/
+}
 
-/*.d-bloc .panel .btn-wire,
+.d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover {
     color: rgba(0, 0, 0, .7);
     border-color: rgba(0, 0, 0, .3);
-}*/
+}
 
-/*.d-bloc .panel,
+.d-bloc .panel,
 .l-bloc {
     color: rgba(0, 0, 0, .5);
-}*/
+}
 
-/*.d-bloc .panel button:hover,
+.d-bloc .panel button:hover,
 .l-bloc button:hover {
     color: rgba(0, 0, 0, .7);
-}*/
+}
 
-/*.l-bloc .icon-round,
+.l-bloc .icon-round,
 .l-bloc .icon-square,
 .l-bloc .icon-rounded,
 .l-bloc .icon-semi-rounded-a,
 .l-bloc .icon-semi-rounded-b {
     border-color: rgba(0, 0, 0, .7);
-}*/
+}
 
-/*.d-bloc .panel .divider-h span,
+.d-bloc .panel .divider-h span,
 .l-bloc .divider-h span {
     border-color: rgba(0, 0, 0, .1);
-}*/
+}
 
 /*logo en tete + nav */
-/*.d-bloc .panel .a-btn,
+.d-bloc .panel .a-btn,
 .l-bloc .a-btn,
 .l-bloc .navbar a,
 .l-bloc .navbar-brand,
@@ -284,10 +281,9 @@ main{
 .l-bloc h6 a,
 .l-bloc p a {
     color: rgba(0, 0, 0, .6);
-    border: rgb(158, 207, 33) solid 10px;
-}*/
+}
 
-/*.d-bloc .panel .a-btn:hover,
+.d-bloc .panel .a-btn:hover,
 .l-bloc .a-btn:hover,
 .l-bloc .navbar a:hover,
 .l-bloc .navbar-brand:hover,
@@ -303,59 +299,57 @@ main{
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
     color: rgba(0, 0, 0, 1);
-}*/
+}
 
-/*.l-bloc .navbar-toggle .icon-bar {
+.l-bloc .navbar-toggle .icon-bar {
     color: rgba(0, 0, 0, .6);
-}*/
+}
 
-/*.d-bloc .panel .btn-wire,
+.d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover,
 .l-bloc .btn-wire,
 .l-bloc .btn-wire:hover {
     color: rgba(0, 0, 0, .7);
     border-color: rgba(0, 0, 0, .3);
-}*/
+}
 
 /*citation client*/
-/*.voffset {
-    border: rgb(199, 149, 11) solid 10px;
+.voffset {
     margin-top: 30px;
-}*/
+    color: #000000;
+}
 
 /*écrase citation client et englobe aussi les 3 icones + leurs h3 et leurs textes*/
 .voffset-lg {
-    
     margin-top: 80px;
 }
 
 /*bloc encadrant les liens sociaux p1 et p2 */
-/*.row-no-gutters {
-    border: rgb(116, 9, 93) solid 10px;
+.row-no-gutters {
     margin-right: 0;
     margin-left: 0;
-}*/
+    padding: 20px;
+}
 
 /*bloc encadrant les liens sociaux 1 par 1 en p1 et p2 */
-/*.row.row-no-gutters > [class^="col-"],
+.row.row-no-gutters > [class^="col-"],
 .row.row-no-gutters > [class*=" col-"] {
-    border: rgb(7, 1, 20) solid 10px;
     padding-right: 0;
     padding-left: 0;
-}*/
-
-/*h1 visible uniquement sur p1 a mettre au debut du css dans les généralités*/
+}
+/*modification de la taille*/
+/*h1 a mettre au debut du css dans les généralités*/
 #bloc-1-hero h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
 }
 
 /*ensemble header p1 puis page deux contient logo + toogle navigation (acceuil et ns contacter en dehors */
 .navbar {
-    
     margin-bottom: 0;
     padding: 15px;
     z-index: 1;
+    
 }
 
 .navbar-brand {
@@ -384,37 +378,36 @@ main{
 
 /*nav combinateur parent enfant/ si le 2nd est un enfant du premier alors il adoptera les spécifications ci apres*/
 .nav > li {
-    border: rgb(209, 161, 199) solid 10px;
     float: left;
     margin-top: 4px;
     font-size: 16px;
 }
-/*util?*/
-/*.navbar-nav .open .dropdown-menu > li > a {
+
+.navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
-}*/
+}
 
 
-/*util?*/
-/*.nav > li a:hover,
+
+.nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
-}*/
+}
 
-/*util?*/
-/*.navbar-toggle {
+
+.navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
-}*/
+}
 
-/*.navbar-toggle:hover {
+.navbar-toggle:hover {
     background: transparent!important;
-}*/
+}
 
-/*.navbar-toggle .icon-bar {
+.navbar-toggle .icon-bar {
     background-color: rgba(0, 0, 0, .5);
     width: 26px;
-}*/
+}
 
 .nav-invert .navbar .nav {
     float: left;
@@ -507,8 +500,9 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
 
+/*icone reseaux sociaux*/
 .icon-md {
-    font-size: 30px!important;
+    font-size: 40px!important;
 }
 
 .icon-lg {
@@ -537,7 +531,7 @@ button {
     border-radius: 0 0 29px 29px;
 }
 
-
+/*-----------------scroll page2---------------------*/
 
 .scrollToTop {
     width: 40px;
@@ -558,7 +552,7 @@ button {
     font-size: 14px;
     opacity: 1;
 }
-
+/*----------------- End scroll page2---------------------*/
 
 /*apparition croix au survol des 4 photos*/
 a[data-lightbox] {
@@ -670,6 +664,7 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
+/*-----------end 4 images------------------------ */
 h1,
 h2,
 h3,
@@ -713,7 +708,7 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .h1 {
@@ -733,10 +728,11 @@ p {
 
 
 /*nouvel ensemble des liens fb insta...*/
-.social {
+.social{
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
+
 
 
 /*texte couleur peche partie 4 souhait + tous les h2*/
@@ -768,9 +764,9 @@ h1 {
 
 
 /*pas de h4*/
-/*h4 {
+h4 {
     color: #333333!important;
-}*/
+}
 
 /*contour des 3dessins*/
 .icons {
@@ -781,9 +777,6 @@ h1 {
 /*texte blanc sous les souhaits + texte au dessus des liens sociaux fb inst*/
 .white {
     color: #FFFFFF!important;
-    font-size: 15px;
-    font-weight: 700;
-    margin: 30px;
 }
 
 /*photos book*/
@@ -831,10 +824,7 @@ h1 {
 /*encadré partie4 souhaits sur toute la page + centré  + partie6 contour du texte en peche  + apparait pour rien en p2 */
 .tc-white {
     color: #FFFFFF!important;
-    font-weight: bolder;
-    font-size: 25px;
-    margin-top: 40px;
-    text-align: center;
+
     
     
 
@@ -871,7 +861,7 @@ h1 {
     width: 45%;
     display: flex;
     flex-direction: column;
-    margin: 25px;
+    margin: 10px;
 }
 /*input formulaire*/
 .form-control {
@@ -881,6 +871,8 @@ h1 {
     border-radius: 5px;
     
 }
+
+
 
 #message{
     height: 150px;
@@ -898,7 +890,6 @@ h1 {
     color: #FFFFFF!important;
     border: none;
     border-radius: 55px;
-   
 }
 
 .btn-atomic-tangerine:hover {
@@ -955,7 +946,7 @@ h1 {
 }
 
 
-/*revoir tous les MQ*/
+/*------------------------------- MQ---------------------------------------------------*/
 
 @media (max-width: 1024px) {
     .bloc {
@@ -1005,10 +996,10 @@ h1 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
+    /*.bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    }*/
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -1017,8 +1008,8 @@ h1 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+       /* padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);*/
     }
 }
 
@@ -1175,13 +1166,13 @@ h1 {
 }
 
 @media (min-width: 768px) {
-    /*.site-navigation {
+    .site-navigation {
         position: absolute;
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
-    }*/
+    }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
