@@ -14,7 +14,6 @@ body {
 }
 
 
-/*util sur un lien????*/
 a,
 button {
     transition: all .3s ease-in-out;
@@ -68,9 +67,9 @@ main{
 
 
 /*section 1*/
-/*.bloc-lg {
+.bloc-lg {
     padding: 100px 50px;
-}*/
+}
 
 /*section 2*/
 .bloc-md {
@@ -340,7 +339,7 @@ main{
 /*modification de la taille*/
 /*h1 a mettre au debut du css dans les généralités*/
 #bloc-1-hero h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bolder;
 }
 
@@ -503,6 +502,7 @@ button {
 /*icone reseaux sociaux*/
 .icon-md {
     font-size: 40px!important;
+    margin: 5px;
 }
 
 .icon-lg {
@@ -710,6 +710,11 @@ p {
     max-width: 600px;
     margin: auto;
 }
+.portfolio-thumb{
+    margin-bottom: 24px;
+    width: 100%;
+    height: 100%;
+}
 
 .h1 {
     font-size: 20px;
@@ -731,6 +736,7 @@ p {
 .social{
     max-width: 400px;
     margin: auto;
+
 }
 
 
@@ -798,7 +804,7 @@ h4 {
 /*encadrement des souhaits*/
 .black-background {
     background-color: rgba(43, 43, 43, 0.724);
-    padding: 40px 40px 40px 40px;
+    padding: 20px 20px 20px 20px;
 }
 
 .bold-link {
@@ -935,7 +941,7 @@ h4 {
 .bg-banniere {
     background-image: url("img/agence-la-panthere.webp");
     width: 100%;
-    height: 250px;
+    height: 350px;
 }
 
 /*img bloc p4 souhaits*/
@@ -985,9 +991,7 @@ h4 {
 }
 
 @media (max-width: 991px) {
-    .container {
-        width: 100%;
-    }
+    
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1011,9 +1015,17 @@ h4 {
        /* padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);*/
     }
+
 }
 
 @media (max-width: 767px) {
+
+    .form-group{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1104,7 +1116,7 @@ h4 {
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding: 40px 0 40px 0;
     }
     .bloc-sm,
     .bloc-md {
@@ -1153,10 +1165,20 @@ h4 {
 }
 
 @media (max-width: 400px) {
+    .form-group{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    } 
+
     .bloc {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
     }
+.map{
+    width: 100%;
+}
+
 }
 
 @media (max-width: 767px) {
@@ -1166,6 +1188,7 @@ h4 {
 }
 
 @media (min-width: 768px) {
+
     .site-navigation {
         position: absolute;
         top: 50%;
